@@ -1,0 +1,26 @@
+{
+  "name": "collective-debriefing-3",
+  "version": "1.0.0",
+  "description": "Cette application web permet à un utilisateur de **créer un CV complet** en remplissant un **formulaire multi-étapes**.  \r Elle offre une **interface intuitive**, la **validation des données**, des **formulaires dynamiques** pour ajouter plusieurs compétences, expériences, langues, etc., et la possibilité de **choisir un modèle de CV** avant de **télécharger ou imprimer** le résultat final.",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOUSSA-AI-DEV/BRIEF2_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MOUSSA-AI-DEV/BRIEF2_JS/issues"
+  },
+  "homepage": "https://github.com/MOUSSA-AI-DEV/BRIEF2_JS#readme"
+}

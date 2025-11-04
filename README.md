@@ -66,15 +66,3 @@ Elle offre une **interface intuitive**, la **validation des données**, des **fo
 
 ### 💻 Étapes d’installation
 
-```bash
-# Cloner le dépôt
-git clone https://github.com/ton-utilisateur/nom-du-projet.git
-
-# Aller dans le dossier
-cd nom-du-projet
-
-# Installer les dépendances
-npm install
-
-# Lancer le projet
-npm start
