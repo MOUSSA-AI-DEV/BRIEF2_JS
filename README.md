@@ -53,8 +53,6 @@ Elle offre une **interface intuitive**, la **validation des données**, des **fo
 | Catégorie | Outils |
 |------------|--------|
 | **Frontend** | HTML5, CSS3, JavaScript (ou React / Vue / Angular selon ton choix) |
-| **Backend (optionnel)** | Node.js / Express (si tu sauvegardes les données côté serveur) |
-| **Base de données (optionnel)** | MongoDB / Firebase / LocalStorage |
 | **Export PDF** | jsPDF / html2canvas / React-to-Print |
 | **Gestion de version** | Git & GitHub |
 
