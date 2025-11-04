@@ -26,7 +26,7 @@ Elle offre une **interface intuitive**, la **validation des données**, des **fo
   - Expériences professionnelles 🏢  
   - Certifications 📜  
 - Bouton **Ajouter** / **Supprimer** pour gérer les champs dynamiquement.
-- Les champs s’ajoutent sans rechargement de la page (JavaScript dynamique / React / Vue.js selon ta stack).
+- Les champs s’ajoutent sans rechargement de la page (JavaScript dynamique ).
 
 ### 4️⃣ Validation des champs
 - Validation en temps réel selon le type de champ :
