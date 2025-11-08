@@ -6,7 +6,7 @@ let btn_next = document.getElementById("next")
 
 let counter=0
 let array_position = [stepper_Data__Personnel,stepper_Data__competence, stepper_Data__experience]
-stepper_Data__Personnel.style.display="block"
+stepper_Data__Personnel.style.display ="block"//block
 stepper_Data__experience.style.display = "none"
 stepper_Data__competence.style.display = "none"
 console.log(array_position[0])

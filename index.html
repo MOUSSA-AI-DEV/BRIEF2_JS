@@ -23,35 +23,39 @@
                         personnelles</p>
                 </div>
 
-                <div  class="flex-1 h-1 bg-blue-600 mx-2"></div>
+                <div class="flex-1 h-1 bg-blue-600 mx-2"></div>
 
                 <div class="flex flex-col items-center text-gray-400">
                     <div
-                      id="cercel__1"   class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 font-bold">
+                        id="cercel__1"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 font-bold">
                         2
                     </div>
-                    <p class="mt-2 text-sm font-medium">Compétences</p>
+                    <p class="mt-2 text-sm font-medium">Parcours Educatif</p>
                 </div>
 
                 <div id="line__2" class="flex-1 h-1 bg-gray-200 mx-2"></div>
 
                 <div class="flex flex-col items-center text-gray-400">
                     <div
-                       id="cercel__2"  class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 font-bold">
+                        id="cercel__2"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 font-bold">
                         3
                     </div>
                     <p class="mt-2 text-sm font-medium">Expériences</p>
                 </div>
-              
+
             </div>
 
-            <div id="form_change" class="border border-gray-300 p-3 m-10 rounded-2xl">
+            <div id="form_change"
+                class="border border-gray-300 p-3 m-10 rounded-2xl">
                 <section id="stepper_Data__Personnel">
                     <div>
                         <div class="flex justify-between p-6">
 
                             <div> <h1>MES DONEES</h1></div>
-                            <div> <label for="languge"> SELECT LANGUE</label>
+                            <div> <label for="languge" name="langue"> SELECT
+                                    LANGUE</label>
                                 <select name="langue" id="langue">
                                     <option value="francais">Francais</option>
                                     <option value="english">English</option>
@@ -79,53 +83,261 @@
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none "
                                     required type="text">
                                 <!-- </div> -->
-                              
 
                             </div>
 
                         </div>
-                                 <div id="stepper_contact__form" class="p-6 flex gap-10 gap-6 w-full "> 
-                                    <div class="flex flex-col w-full text-sm font-medium"> <label for="email">Email *: </label>
-                                    <input id="email" required type="text" class="border border-gray-300 rounded-lg p-2 focus:outline-none mx-auto w-full"></div>
-                                   
-                                  <div class="flex flex-col w-full text-sm font-medium">  <label for="num">Numero de Telephone:</label>
-                                    <input id="num" required type="text" class="border border-gray-300 rounded-lg p-2 focus:outline-none  mx-auto w-full"></div>
+                        <div id="stepper_contact__form"
+                            class="p-6 flex gap-10 gap-6 w-full ">
+                            <div
+                                class="flex flex-col w-full text-sm font-medium">
+                                <label for="email">Email *: </label>
+                                <input id="email" required type="text"
+                                    class="border border-gray-300 rounded-lg p-2 focus:outline-none mx-auto w-full"></div>
 
-                                </div>
-                                <div id="stepper_adress" class="flex flex-col w-full text-sm font-medium p-4 ">
-                                    <label for="adress">adress:</label>
-                                    <input id="adress" type="text" class="border border-gray-300 rounded-lg p-2  focus:outline-none w-full" >
-                                </div>
-                                  <div id="stepper_contact__form" class="p-6 flex gap-10 gap-6 w-full "> 
-                                    <div class="flex flex-col w-full text-sm font-medium"> <label for="email">Code Postal: </label>
-                                    <input id="email" required type="text" class="border border-gray-300 rounded-lg p-2 focus:outline-none mx-auto w-full"></div>
-                                   
-                                  <div class="flex flex-col w-full text-sm font-medium">  <label for="num">localite/ville:</label>
-                                    <input id="num" required type="text" class="border border-gray-300 rounded-lg p-2 focus:outline-none  mx-auto w-full"></div>
+                            <div
+                                class="flex flex-col w-full text-sm font-medium">
+                                <label for="num">Numero de Telephone:</label>
+                                <input id="num" required type="text"
+                                    class="border border-gray-300 rounded-lg p-2 focus:outline-none  mx-auto w-full"></div>
+
+                        </div>
+                        <div id="stepper_adress"
+                            class="flex flex-col w-full text-sm font-medium p-4 ">
+                            <label for="adress">adress:</label>
+                            <input id="adress" type="text"
+                                class="border border-gray-300 rounded-lg p-2  focus:outline-none w-full">
+                        </div>
+                        <div id="stepper_contact__form"
+                            class="p-6 flex gap-10 gap-6 w-full ">
+                            <div
+                                class="flex flex-col w-full text-sm font-medium">
+                                <label for="email">Code Postal: </label>
+                                <input id="email" required type="text"
+                                    class="border border-gray-300 rounded-lg p-2 focus:outline-none mx-auto w-full"></div>
+
+                            <div
+                                class="flex flex-col w-full text-sm font-medium">
+                                <label for="num">localite/ville:</label>
+                                <input id="num" required type="text"
+                                    class="border border-gray-300 rounded-lg p-2 focus:outline-none  mx-auto w-full"></div>
+                        </div>
+
+                    </section>
+  <section id="stepper_Data__competence" class="p-5 border h-full">
+    <div id="stepper_Data__formationScolaire" class="text-sm font-medium border rounded-sm border-gray-300 p-3">
+        <div id="stepper_Data_formationScolaire_Header">
+            <h2>Formation Scolaire</h2>
+        </div>
+
+        <!-- FORMATION SCOLAIRE -->
+        <div class="p-5">
+            <div class="flex justify-between font-medium text-sm">
+                <div class="flex flex-col">
+                    <label class="p-2" for="Formation_scolaire">Formation scolaire</label>
+                    <input id="Formation_scolaire" class="border border-gray-300 rounded-sm p-2 focus:outline-none w-60" type="text">
+                </div>
+                <div class="flex flex-col font-medium text-sm">
+                    <label class="p-2" for="localite">Localite</label>
+                    <input id="localite" type="text" class="border border-gray-300 rounded-sm p-2 focus:outline-none w-60">
+                </div>
+            </div>
+
+            <div class="flex flex-col font-medium mt-4">
+                <label for="Etablissement">Etablissement d'enseignement</label>
+                <input id="Etablissement" class="border border-gray-300 rounded-lg p-2 focus:outline-none w-full" type="text">
+            </div>
+
+            <!-- DATE SELECTION -->
+            <div class="mt-4">
+                <div id="p_depuis__jusqua" class="flex flex-row space-x-52 mx-5 font-medium text-sm">
+                    <p>Depuis</p>
+                    <p>Jusqu'a</p>
+                </div>
+
+                <div id="select_depuis__jusqua" class="flex space-x-9 mt-1">
+                    <!-- Depuis Month -->
+                    <div id="month-depuis">
+                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30">
+                            <option>Janvier</option>
+                            <option>Février</option>
+                            <option>Mars</option>
+                            <option>Avril</option>
+                            <option>Mai</option>
+                            <option>Juin</option>
+                            <option>Juillet</option>
+                            <option>Août</option>
+                            <option>Septembre</option>
+                            <option>Octobre</option>
+                            <option>Novembre</option>
+                            <option>Décembre</option>
+                        </select>
                     </div>
 
-                </section>
-                <section id="stepper_Data__competence">
-                    <div>fghjklfghjk;l</div>
-                    <div>fghjklfghjk;l</div>
-                    <div>fghjklfghjk;l</div>
-                    <div>gggggggggggggggggggggggggggggggggggggggg</div>
-                    <div></div>
-                </section>
-                <section id="stepper_Data__experience">
-                    <div>fghjklfghjk;l</div>
-                    <div>fghjklfghjk;l</div>
-                    <div>fghjklfghjk;l</div>
-                    <div>fghjklfghjk;l</div>
-                    <div></div>
-                </section>
+                    <!-- Depuis Year -->
+                    <div id="year-depuis">
+                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30">
+                            <option>2023</option>
+                            <option>2011</option>
+                            <option>2010</option>
+                            <option>2009</option>
+                            <option>2008</option>
+                            <option>2007</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2001</option>
+                            <option>2000</option>
+                        </select>
+                    </div>
 
-            </div>
+                    <!-- Jusqu'à Month -->
+                    <div id="month-jusqua">
+                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
+                            <option>Janvier</option>
+                            <option>Février</option>
+                            <option>Mars</option>
+                            <option>Avril</option>
+                            <option>Mai</option>
+                            <option>Juin</option>
+                            <option>Juillet</option>
+                            <option>Août</option>
+                            <option>Septembre</option>
+                            <option>Octobre</option>
+                            <option>Novembre</option>
+                            <option>Décembre</option>
+                        </select>
+                    </div>
 
-            <div class="w-100  p-4 flex justify-between gap-10 ml-40">
-              <button id="previeuce" class="btn btn-primary border border-gray-300 rounded-lg bg-blue-300 w-40 p-2">previeuce</button><button id="next" class="btn btn-primary border border-gray-300 rounded-lg bg-blue-300 w-40 p-2">Next</button>
+                    <!-- Jusqu'à Year -->
+                    <div id="year-jusqua">
+                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
+                            <option>2023</option>
+                            <option>2011</option>
+                            <option>2010</option>
+                            <option>2009</option>
+                            <option>2008</option>
+                            <option>2007</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2001</option>
+                            <option>2000</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-        </section>
-<script src="/assets/js/script.js"></script>
-    </body>
-</html>
+        </div>
+
+        <!-- COMPETENCES -->
+        <div id="stepper_Data__competence" class="mt-5 border-t pt-4">
+            <h2 class="font-medium mb-2">Compétences</h2>
+
+            <div class="flex justify-between">
+                <input type="text" placeholder="Nom de la compétence"
+                    class="border border-gray-300 rounded-sm p-2 w-60 focus:outline-none">
+
+                <select class="border border-gray-300 rounded-sm p-2 w-60">
+                    <option>Niveau - Debutant</option>
+                    <option>Intermédiaire</option>
+                    <option>Avancé</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- LANGUES -->
+        <div id="stepper_Data__langue" class="mt-5 border-t pt-4">
+            <h2 class="font-medium mb-2">Langues</h2>
+
+            <div class="flex justify-between">
+                <input type="text" placeholder="Langue"
+                    class="border border-gray-300 rounded-sm p-2 w-60 focus:outline-none">
+
+                <select class="border border-gray-300 rounded-sm p-2 w-60">
+                    <option>Niveau - Debutant</option>
+                    <option>Intermediaire</option>
+                    <option>Avance</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- LOISIRS -->
+        <div id="stepper_Data__loisire" class="mt-5 border-t pt-4">
+            <h2 class="font-medium mb-2">Loisirs</h2>
+
+            <input type="text" placeholder="Ex: Football, Lecture…"
+                class="border border-gray-300 rounded-sm p-2 w-full focus:outline-none">
+        </div>
+
+        <!-- SECTION SUPPLEMENTAIRE -->
+        <div id="stepper_Data__ajoueterSomthing" class="mt-5 border-t pt-4">
+            <h2 class="font-medium mb-2">Section supplementaire</h2>
+
+            <input type="text" placeholder="Titre de la section"
+                class="border border-gray-300 rounded-sm p-2 w-full mb-2">
+
+            <textarea placeholder="Description"
+                class="border border-gray-300 rounded-sm p-2 w-full h-24 resize-none"></textarea>
+        </div>
+    </div>
+</section>
+<section id="stepper_Data__experience" class="p-5 border h-full text-sm font-medium">
+
+    <!-- Objectife Professionnel -->
+    <div class="border rounded-sm border-gray-300 p-3 mb-5">
+        <h2 class="font-medium mb-2">Objectif Professionnel</h2>
+        <textarea class="border border-gray-300 rounded-sm p-2 w-full h-24 focus:outline-none" 
+                  placeholder="Décrivez votre objectif professionnel"></textarea>
+    </div>
+
+    <!-- Projets -->
+    <div class="border rounded-sm border-gray-300 p-3 mb-5">
+        <h2 class="font-medium mb-2">Projets</h2>
+
+        <input class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
+               type="text" placeholder="Nom du projet">
+
+        <textarea class="border border-gray-300 rounded-sm p-2 w-full h-24 focus:outline-none" 
+                  placeholder="Description du projet"></textarea>
+    </div>
+
+    <!-- Certifications -->
+    <div class="border rounded-sm border-gray-300 p-3 mb-5">
+        <h2 class="font-medium mb-2">Certifications</h2>
+
+        <input class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
+               type="text" placeholder="Nom de la certification">
+
+        <input class="border border-gray-300 rounded-sm p-2 w-full" 
+               type="text" placeholder="Institution / Année">
+    </div>
+    <!-- les References -->
+
+    <div class="border rounded-sm border-gray-300 p-3">
+        <h2 class="font-medium mb-2">References</h2>
+
+     
+
+        <input class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
+               type="text" placeholder="Poste / Relation">
+
+        <input class="border border-gray-300 rounded-sm p-2 w-full" 
+               type="text" placeholder="Téléphone ou Email">
+    </div>
+
+</section>
+
+                    </div>
+
+                    <div class="w-100  p-4 flex justify-between gap-10 ml-40">
+                        <button id="previeuce"
+                            class="btn btn-primary border border-gray-300 rounded-lg bg-blue-300 w-40 p-2">previeuce</button><button
+                            id="next"
+                            class="btn btn-primary border border-gray-300 rounded-lg bg-blue-300 w-40 p-2">Next</button>
+                    </div>
+                </section>
+                <script src="/assets/js/script.js"></script>
+            </body>
+        </html>
