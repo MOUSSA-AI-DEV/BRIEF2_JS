@@ -58,7 +58,7 @@
                                     LANGUE</label>
                                 <select name="langue" id="langue">
                                     <option value="francais">Francais</option>
-                                    <option value="english">English</option>
+                                <option value="english">English</option>
                                     <option value="arabe">Arab</option>
                                 </select>
                             </div>
@@ -70,16 +70,16 @@
                                 class="objet-cover rounded-[8px] border border-gray-300 h-40">
                             <div class="flex flex-col gap-3 w-full">
                                 <!-- <div> -->
-                                <label for="prénom"
+                                <label for="prenom"
                                     class="text-sm font-medium text-gray-700 mb-1">prenom*</label>
-                                <input id="prénom" required type="text"
+                                <input name="prenom" id="prénom" required type="text"
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none  ">
                                 <!-- </div>
                                 <div> -->
                                 <label for="nom"
                                     class="text-sm font-medium text-gray-700 mb-1">Nom
                                     de famille*</label>
-                                <input id="nom"
+                                <input name="nom" id="nom"
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none "
                                     required type="text">
                                 <!-- </div> -->
@@ -92,34 +92,34 @@
                             <div
                                 class="flex flex-col w-full text-sm font-medium">
                                 <label for="email">Email *: </label>
-                                <input id="email" required type="text"
+                                <input name="email" id="email" required type="text"
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none mx-auto w-full"></div>
 
                             <div
                                 class="flex flex-col w-full text-sm font-medium">
-                                <label for="num">Numero de Telephone:</label>
-                                <input id="num" required type="text"
+                                <label for="num">Numero de Telephone *:</label>
+                                <input name="num" id="num" required type="text"
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none  mx-auto w-full"></div>
 
                         </div>
                         <div id="stepper_adress"
                             class="flex flex-col w-full text-sm font-medium p-4 ">
                             <label for="adress">adress:</label>
-                            <input id="adress" type="text"
+                            <input name="adress" id="adress" type="text"
                                 class="border border-gray-300 rounded-lg p-2  focus:outline-none w-full">
                         </div>
                         <div id="stepper_contact__form"
                             class="p-6 flex gap-10 gap-6 w-full ">
                             <div
                                 class="flex flex-col w-full text-sm font-medium">
-                                <label for="email">Code Postal: </label>
-                                <input id="email" required type="text"
+                                <label for="code_postal">Code Postal: </label>
+                                <input name="code_postal" id="code_postal" required type="text"
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none mx-auto w-full"></div>
 
                             <div
                                 class="flex flex-col w-full text-sm font-medium">
-                                <label for="num">localite/ville:</label>
-                                <input id="num" required type="text"
+                                <label for="localite">localite/ville:</label>
+                                <input id="localite" required type="text"
                                     class="border border-gray-300 rounded-lg p-2 focus:outline-none  mx-auto w-full"></div>
                         </div>
 
@@ -135,17 +135,17 @@
             <div class="flex justify-between font-medium text-sm">
                 <div class="flex flex-col">
                     <label class="p-2" for="Formation_scolaire">Formation scolaire</label>
-                    <input id="Formation_scolaire" class="border border-gray-300 rounded-sm p-2 focus:outline-none w-60" type="text">
+                    <input name="Formation_scolaire" id="Formation_scolaire" class="border border-gray-300 rounded-sm p-2 focus:outline-none w-60" type="text">
                 </div>
                 <div class="flex flex-col font-medium text-sm">
                     <label class="p-2" for="localite">Localite</label>
-                    <input id="localite" type="text" class="border border-gray-300 rounded-sm p-2 focus:outline-none w-60">
+                    <input name="localite" id="localite" type="text" class="border border-gray-300 rounded-sm p-2 focus:outline-none w-60">
                 </div>
             </div>
 
             <div class="flex flex-col font-medium mt-4">
                 <label for="Etablissement">Etablissement d'enseignement</label>
-                <input id="Etablissement" class="border border-gray-300 rounded-lg p-2 focus:outline-none w-full" type="text">
+                <input name="Etablissement" id="Etablissement" class="border border-gray-300 rounded-lg p-2 focus:outline-none w-full" type="text">
             </div>
 
             <!-- DATE SELECTION -->
@@ -158,74 +158,78 @@
                 <div id="select_depuis__jusqua" class="flex space-x-9 mt-1">
                     <!-- Depuis Month -->
                     <div id="month-depuis">
-                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30">
-                            <option>Janvier</option>
-                            <option>Février</option>
-                            <option>Mars</option>
-                            <option>Avril</option>
-                            <option>Mai</option>
-                            <option>Juin</option>
-                            <option>Juillet</option>
-                            <option>Août</option>
-                            <option>Septembre</option>
-                            <option>Octobre</option>
-                            <option>Novembre</option>
-                            <option>Décembre</option>
-                        </select>
+                         <select name="month_jusqua" class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
+    <option value="1">Janvier</option>
+    <option value="2">Février</option>
+    <option value="3">Mars</option>
+    <option value="4">Avril</option>
+    <option value="5">Mai</option>
+    <option value="6">Juin</option>
+    <option value="7">Juillet</option>
+    <option value="8">Août</option>
+    <option value="9">Septembre</option>
+    <option value="10">Octobre</option>
+    <option value="11">Novembre</option>
+    <option value="12">Décembre</option>
+</select>
+
                     </div>
 
                     <!-- Depuis Year -->
                     <div id="year-depuis">
-                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30">
-                            <option>2023</option>
-                            <option>2011</option>
-                            <option>2010</option>
-                            <option>2009</option>
-                            <option>2008</option>
-                            <option>2007</option>
-                            <option>2006</option>
-                            <option>2005</option>
-                            <option>2004</option>
-                            <option>2003</option>
-                            <option>2001</option>
-                            <option>2000</option>
-                        </select>
+                      <select name="year_jusqua" class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
+    <option value="2023">2023</option>
+    <option value="2011">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+</select>
+
                     </div>
 
                     <!-- Jusqu'à Month -->
                     <div id="month-jusqua">
-                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
-                            <option>Janvier</option>
-                            <option>Février</option>
-                            <option>Mars</option>
-                            <option>Avril</option>
-                            <option>Mai</option>
-                            <option>Juin</option>
-                            <option>Juillet</option>
-                            <option>Août</option>
-                            <option>Septembre</option>
-                            <option>Octobre</option>
-                            <option>Novembre</option>
-                            <option>Décembre</option>
-                        </select>
+                       <select name="month_jusqua" class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
+    <option value="1">Janvier</option>
+    <option value="2">Février</option>
+    <option value="3">Mars</option>
+    <option value="4">Avril</option>
+    <option value="5">Mai</option>
+    <option value="6">Juin</option>
+    <option value="7">Juillet</option>
+    <option value="8">Août</option>
+    <option value="9">Septembre</option>
+    <option value="10">Octobre</option>
+    <option value="11">Novembre</option>
+    <option value="12">Décembre</option>
+</select>
+
                     </div>
 
                     <!-- Jusqu'à Year -->
                     <div id="year-jusqua">
-                        <select class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
-                            <option>2023</option>
-                            <option>2011</option>
-                            <option>2010</option>
-                            <option>2009</option>
-                            <option>2008</option>
-                            <option>2007</option>
-                            <option>2006</option>
-                            <option>2005</option>
-                            <option>2004</option>
-                            <option>2003</option>
-                            <option>2001</option>
-                            <option>2000</option>
-                        </select>
+                      <select name="year_jusqua" class="h-15 border border-gray-300 rounded-lg pl-2 w-30 text-sm font-medium">
+    <option value="2023">2023</option>
+    <option value="2011">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+</select>
+
                     </div>
                 </div>
             </div>
@@ -236,14 +240,15 @@
             <h2 class="font-medium mb-2">Compétences</h2>
 
             <div class="flex justify-between">
-                <input type="text" placeholder="Nom de la compétence"
+                <input name="compétence" type="text" placeholder="Nom de la compétence"
                     class="border border-gray-300 rounded-sm p-2 w-60 focus:outline-none">
 
-                <select class="border border-gray-300 rounded-sm p-2 w-60">
-                    <option>Niveau - Debutant</option>
-                    <option>Intermédiaire</option>
-                    <option>Avancé</option>
-                </select>
+              <select name="niveaux_competence" class="border border-gray-300 rounded-sm p-2 w-60">
+    <option value="debutant">Niveau - Débutant</option>
+    <option value="intermediaire">Intermédiaire</option>
+    <option value="avance">Avancé</option>
+</select>
+
             </div>
         </div>
 
@@ -252,14 +257,15 @@
             <h2 class="font-medium mb-2">Langues</h2>
 
             <div class="flex justify-between">
-                <input type="text" placeholder="Langue"
+                <input  name="Langue" placeholder="Langue"
                     class="border border-gray-300 rounded-sm p-2 w-60 focus:outline-none">
 
-                <select class="border border-gray-300 rounded-sm p-2 w-60">
-                    <option>Niveau - Debutant</option>
-                    <option>Intermediaire</option>
-                    <option>Avance</option>
-                </select>
+             <select name="niveaux_langue" class="border border-gray-300 rounded-sm p-2 w-60">
+    <option value="debutant">Niveau - Débutant</option>
+    <option value="intermediaire">Intermédiaire</option>
+    <option value="avance">Avancé</option>
+</select>
+
             </div>
         </div>
 
@@ -267,7 +273,7 @@
         <div id="stepper_Data__loisire" class="mt-5 border-t pt-4">
             <h2 class="font-medium mb-2">Loisirs</h2>
 
-            <input type="text" placeholder="Ex: Football, Lecture…"
+            <input name="Loisirs" type="text" placeholder="Ex: Football, Lecture…"
                 class="border border-gray-300 rounded-sm p-2 w-full focus:outline-none">
         </div>
 
@@ -275,10 +281,10 @@
         <div id="stepper_Data__ajoueterSomthing" class="mt-5 border-t pt-4">
             <h2 class="font-medium mb-2">Section supplementaire</h2>
 
-            <input type="text" placeholder="Titre de la section"
+            <input name="section_suplementaire" type="text" placeholder="Titre de la section"
                 class="border border-gray-300 rounded-sm p-2 w-full mb-2">
 
-            <textarea placeholder="Description"
+            <textarea name="text_section_suplementaire" placeholder="Description"
                 class="border border-gray-300 rounded-sm p-2 w-full h-24 resize-none"></textarea>
         </div>
     </div>
@@ -288,7 +294,7 @@
     <!-- Objectife Professionnel -->
     <div class="border rounded-sm border-gray-300 p-3 mb-5">
         <h2 class="font-medium mb-2">Objectif Professionnel</h2>
-        <textarea class="border border-gray-300 rounded-sm p-2 w-full h-24 focus:outline-none" 
+        <textarea name="objectif_professionelle" class="border border-gray-300 rounded-sm p-2 w-full h-24 focus:outline-none" 
                   placeholder="Décrivez votre objectif professionnel"></textarea>
     </div>
 
@@ -296,10 +302,10 @@
     <div class="border rounded-sm border-gray-300 p-3 mb-5">
         <h2 class="font-medium mb-2">Projets</h2>
 
-        <input class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
+        <input name="projects" class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
                type="text" placeholder="Nom du projet">
 
-        <textarea class="border border-gray-300 rounded-sm p-2 w-full h-24 focus:outline-none" 
+        <textarea name="projects_description" class="border border-gray-300 rounded-sm p-2 w-full h-24 focus:outline-none" 
                   placeholder="Description du projet"></textarea>
     </div>
 
@@ -307,10 +313,10 @@
     <div class="border rounded-sm border-gray-300 p-3 mb-5">
         <h2 class="font-medium mb-2">Certifications</h2>
 
-        <input class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
+        <input name="certification" class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
                type="text" placeholder="Nom de la certification">
 
-        <input class="border border-gray-300 rounded-sm p-2 w-full" 
+        <input name="certification_institus" class="border border-gray-300 rounded-sm p-2 w-full" 
                type="text" placeholder="Institution / Année">
     </div>
     <!-- les References -->
@@ -320,11 +326,9 @@
 
      
 
-        <input class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
+        <input name="Reference_poste" class="border border-gray-300 rounded-sm p-2 w-full mb-2" 
                type="text" placeholder="Poste / Relation">
 
-        <input class="border border-gray-300 rounded-sm p-2 w-full" 
-               type="text" placeholder="Téléphone ou Email">
     </div>
 
 </section>
