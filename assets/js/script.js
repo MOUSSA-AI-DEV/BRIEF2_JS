@@ -1,3 +1,69 @@
+
+const experience_objectife_pro = {
+    //Informations personnelles
+    informations: {
+       
+        langues: [
+            {
+                
+            }
+        ],
+ //plusieurs langues possibles
+    },
+
+    //Image personnelle
+    photo: "",
+
+    //Parcours Éducatif
+    formation: [
+        {
+           
+            depuis: {
+               
+            },
+            jusqua: {
+               
+            }
+        }
+    ],
+
+    //Compétences multiple
+    competences: [
+        {
+           
+        }
+    ],
+
+    
+   
+    //oisirs multiple
+    loisirs: [],
+
+    //supplémentaire
+    extraSection: {
+        titre: "",
+        description: ""
+    },
+
+    //  8 — Expériences
+    experiences: {
+        projets: [
+            {
+            }
+        ],
+        certifications: [
+            {
+               
+            }
+        ],
+        references: [
+            {
+                poste_ou_relation: ""
+            }
+        ]
+    }
+};
+
 let stepper_Data__competence = document.getElementById("stepper_Data__competence")
 let stepper_Data__experience = document.getElementById("stepper_Data__experience")
 let stepper_Data__Personnel = document.getElementById("stepper_Data__Personnel")
@@ -96,10 +162,7 @@ btn_previece.addEventListener("click", (e) => {
 }
 )
 // validation 
-let general_data_object={}
-let personnel_information={}
-let parcours_educatif={}
-let experience_objectife_pro={}
+
 stepper_Data__Personnel.addEventListener("input" ,(e)=>{
 
     
@@ -109,7 +172,7 @@ console.log(counter)
         inputs_value.forEach((el)=>{
             if(el.value){
 // console.log(el.name)
-                personnel_information[el.name] =el.value
+                experience_objectife_pro.informations[el.name] =el.value
 
             }
         })
@@ -125,7 +188,7 @@ stepper_Data__competence.addEventListener("input", (e)=>{
             // let el=e.target
             if (el.value) {
 
-                parcours_educatif[el.name] = el.value
+                experience_objectife_pro.competences[0][el.name] = el.value
 
             }
             else{
@@ -148,7 +211,7 @@ stepper_Data__experience.addEventListener("input", (e) => {
 
     input_experience.forEach(element => {
             if (element.value) {
-            experience_objectife_pro[element.name] = element.value
+                experience_objectife_pro.experiences[element.name] = element.value
             } else {
                 return
             }
@@ -157,16 +220,11 @@ stepper_Data__experience.addEventListener("input", (e) => {
     
 
     console.log(experience_objectife_pro)
-     general_data_object = {
-        ...personnel_information,
-        ...parcours_educatif,
-        ...experience_objectife_pro
-    };
-console.log(general_data_object)
+    
+    console.log(experience_objectife_pro.experiences)
 })  
  
-  
-      
+    
 
 
 
