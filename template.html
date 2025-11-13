@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Template </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div class="max-w-4xl mx-auto my-10 bg-white shadow-lg rounded-lg overflow-hidden relative" id="cv-container">
+
+    <div class="flex flex-col md:flex-row items-center p-6 bg-gray-50 border-b">
+      <img id="photo" src="" alt="Photo de profil"
+           class="w-32 h-32 object-cover rounded-full border-4 border-indigo-500 mb-4 md:mb-0 md:mr-6" />
+      <div>
+        <h1 id="nom" class="text-3xl font-bold text-indigo-700">Nom Prénom</h1>
+        <p id="poste" class="text-lg text-gray-600">Poste / Titre</p>
+        <p id="contact" class="text-sm text-gray-500 mt-2">Email • Téléphone • Adresse</p>
+      </div>
+    </div>
+
+    <section class="p-6 border-b">
+      <h2 class="text-xl font-semibold text-indigo-700 mb-4">Formation</h2>
+      <div id="formation-list" class="space-y-2"></div>
+    </section>
+
+    <section class="p-6 border-b">
+      <h2 class="text-xl font-semibold text-indigo-700 mb-4">Competences</h2>
+      <ul id="competences-list" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></ul>
+    </section>
+
+    <section class="p-6 border-b">
+      <h2 class="text-xl font-semibold text-indigo-700 mb-4">Langues</h2>
+      <ul id="langues-list" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></ul>
+    </section>
+
+    <section class="p-6 border-b">
+      <h2 class="text-xl font-semibold text-indigo-700 mb-4">Loisirs</h2>
+      <ul id="loisirs-list" class="flex flex-wrap gap-3 text-gray-700"></ul>
+    </section>
+
+    <section class="p-6 border-b">
+      <h2 id="extra-titre" class="text-xl font-semibold text-indigo-700 mb-2">Section supplementaire</h2>
+      <p id="extra-description" class="text-gray-700"></p>
+    </section>
+
+   
+
+    <section class="p-6">
+      <h2 class="text-xl font-semibold text-indigo-700 mb-4">Experiences & Projets</h2>
+      <div id="projets-list" class="space-y-3"></div>
+    </section>
+  </div>
+
+
+  <div class="text-center mt-6">
+    <button id="savePdfBtn"
+      class="bg-indigo-600 hover:bg-indigo-700 text-white  py-2 px-4 rounded-lg shadow">
+    Enregistrer en PDF
+    </button>
+  </div>
+
+                <script >
+    
+                    
+function renderCV(data) {
+    document.getElementById("nom").textContent = `${data.informations.prenom} ${data.informations.nom}`;
+    document.getElementById("poste").textContent = data.objectif_professionelle;
+    document.getElementById("contact").textContent = `${data.informations.email} : ${data.informations.num} :${data.informations.adress}`;
+
+}
+      </script>
+</body>
+</html>
